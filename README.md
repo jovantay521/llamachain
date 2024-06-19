@@ -74,7 +74,7 @@ Run the program
 ```sh
 python main.py
 ```
-
+![image](attachments/llamachain.png)
 ## Built using
 - LLM: ollama, llama3, nomic-embed-text
 - Document Loader: PyMuPDFReader, RapidOCR 

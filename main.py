@@ -11,12 +11,12 @@ from langchain_chroma import Chroma
 
 # environment variables
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_API_KEY"] = "..."
 os.environ["LANGCHAIN_PROJECT"] = "llamachain"
 
 # llm
-LLM = ChatOllama(base_url="http://192.168.8.3:11434", model="llama3:70b", num_thread=96)
-# LLM = ChatOllama(model="llama3b")
+# LLM = ChatOllama(base_url="...", model="llama3:70b", num_thread=96)
+LLM = ChatOllama(model="llama3b")
 
 all_splits = []
 directory_path = "documents"
@@ -40,8 +40,8 @@ for filename in os.listdir(directory_path):
 
 # 3. store documents
 print("=== storing documents ===")
-oembed = OllamaEmbeddings(base_url="http://192.168.8.3:11434", model="nomic-embed-text", num_thread=96)
-# oembed = OllamaEmbeddings(model="nomic-embed-text")
+# oembed = OllamaEmbeddings(base_url="...", model="nomic-embed-text", num_thread=96)
+oembed = OllamaEmbeddings(model="nomic-embed-text")
 vectorstore = Chroma.from_documents(documents=all_splits, embedding=oembed)
 
 # 4. retrieve documents
