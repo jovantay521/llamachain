@@ -83,4 +83,4 @@ python main.py
 
 ## Credits
 - Jovan (@jovantay521)
-- Ziyang (@Zycranny)
+- Ziyang (@Zycrannny)
