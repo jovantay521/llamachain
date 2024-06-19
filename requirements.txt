@@ -3,4 +3,3 @@ langchain_community
 langchain_chroma
 pymupdf
 rapidocr-onnxruntime
-rapidocr-onnxruntime
