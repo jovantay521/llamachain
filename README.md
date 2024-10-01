@@ -19,7 +19,7 @@ Install Python 3.12.x ([pyenv installation](https://github.com/pyenv/pyenv?tab=r
 pyenv install 3.12
 ```
 ```sh
-cd piggy
+cd llamachain
 pyenv local 3.12
 ```
 Set up virtual environment
